@@ -5,3 +5,13 @@ require_relative '../config/environment'
 
 binding.pry
 "pls"
+
+Song.create_table
+
+gold_digger = Song.new(name: "Gold Digger", album: "Late Registration")
+
+gold_digger.name
+# => "Gold Digger"
+
+gold_digger.album
+# => "Late Registration"
